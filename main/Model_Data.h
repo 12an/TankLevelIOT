@@ -32,7 +32,7 @@ extern float current_galons;
 extern float persentage_current;
 extern float osffet_vertical_volumen;
 extern float osffet_horizontal_volumen;
-extern float osffet_sensor_volumen;
+extern float osffet_sensor;
 extern String status;
 extern bool is_low;
 extern bool is_hight;

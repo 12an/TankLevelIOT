@@ -65,7 +65,7 @@ void TaskLevelFollow(void *pvParameters)  // This is a task.
         }
         indexFrame = 0;
         if (xSemaphoreTake(TankMutex, 0 ) == pdTRUE){
-          sensor_mm_read = BOLLA_OSFFET + ALTURA_TANQUE - average - 54.5;
+          sensor_mm_read = BOLLA_OSFFET + ALTURA_TANQUE - average + osffet_sensor;
           if (sensor_mm_read<0){
             sensor_mm_read = 0;
           }
